@@ -1,0 +1,29 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ans;
+    int score = 0;
+
+    cout << "QUIZ GAME\n";
+
+    cout << "\n1. Which language is used in this program?\n";
+    cout << "A. Java  B. C++  C. Python\n";
+    cin >> ans;
+    if (ans == 'B' || ans == 'b') score++;
+
+    cout << "\n2. Which is an output statement in C++?\n";
+    cout << "A. cin  B. cout  C. int\n";
+    cin >> ans;
+    if (ans == 'B' || ans == 'b') score++;
+
+    cout << "\n3. Which symbol ends a C++ statement?\n";
+    cout << "A. ;  B. :  C. ,\n";
+    cin >> ans;
+    if (ans == 'A' || ans == 'a') score++;
+
+    cout << "\nYour Score: " << score << "/3";
+
+    return 0;
+}
